@@ -1,5 +1,9 @@
 .App {
   text-align: center;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .App-logo {
@@ -30,4 +34,83 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.tile {
+  height: 40px !important;
+  width: 40px !important;
+  background: grey;
+  color: white;
+  padding: 10px;
+  border: 1px solid #61dafb;
+  cursor: pointer;
+}
+
+.tileBlock {
+  height: 40px !important;
+  width: 40px !important;
+  background: dimgray;
+  color: white;
+  padding: 10px;
+  border: 1px solid #61dafb;
+  cursor: not-allowed;
+}
+
+.q-title {
+  text-align: center;
+  display: flex;
+  font-size: xx-large;
+  justify-content: center;
+  align-items: center;
+  height: 40px !important;
+  width: 40px !important;
+  background: #12b154;
+  color: white;
+  padding: 10px;
+  border: 1px solid #61dafb;
+  cursor: pointer;
+}
+
+.row {
+  display: flex;
+  place-content: center;
+  justify-content: center;
+}
+
+.no-bg {
+  background: transparent;
+}
+
+.color-green {
+  color: #12b154;
+}
+
+@media only screen and (max-width: 600px) {
+  .q-title, .tile, .tileBlock {
+    width: 25px !important;
+    height: 25px !important;
+  }
+}
+
+.moves {
+  padding: 10px;
+  font-size: 16px;
+  background: #f9916a;
+  color: white;
+  font-weight: bold;
+  width: fit-content;
+  margin-top: 2px;
+}
+
+.moves-icon {
+  padding: 10px;
+  background: #ffa786;
+  margin-top: 2px;
+}
+
+.moves-div {
+  display: flex;
+  place-content: center;
+  align-items: center;
+  justify-content: center;
 }
